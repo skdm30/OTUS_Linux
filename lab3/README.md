@@ -12,4 +12,5 @@
 - создан playbook [install_nginx.yml](config/install_nginx.yml).
 
 После выполнения playbook с хоста управления произведена проверка правильности выполнения работы:
-![](pic/man_new.png)  
+![](pic/final.png)  
+
