@@ -10,3 +10,6 @@
 - отредактирована конфигурационный файл [ansible.cfg](config/ansible.cfg);
 - создан файл шаблона конфигурации nginx [nginx.conf.j2](config/templates/nginx.conf.j2);
 - создан playbook [install_nginx.yml](config/install_nginx.yml).
+
+После выполнения playbook с хоста управления произведена проверка правильности выполнения работы:
+![](pic/man_new.png)  
