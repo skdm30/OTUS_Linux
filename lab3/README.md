@@ -8,5 +8,5 @@
 Выполнены следующие действия:
 - cоздан файл инвенторизации [my_hosts.ini](config/my_hosts.ini);
 - отредактирована конфигурационный файл [ansible.cfg](config/ansible.cfg);
-- создан файл шаблона конфигурации nginx [nginx.conf.j2](config/temlates/nginx.conf.j2);
+- создан файл шаблона конфигурации nginx [nginx.conf.j2](config/templates/nginx.conf.j2);
 - создан playbook [install_nginx.yml](config/install_nginx.yml).
