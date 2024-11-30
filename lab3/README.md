@@ -5,5 +5,8 @@
 - ubuntu-otus-02 - управляемый хост.
 
 
-Полные настройки оборудования в Московском офиссе приведены здесь:
-[SW2](config/setting_SW2) 
+Выполнены следующие действия:
+- cоздан файл инвенторизации [my_hosts.ini](config/my_hosts.ini);
+- отредактирована конфигурационный файл [ansible.cfg](config/ansible.cfg);
+- создан файл шаблона конфигурации nginx [ansible.cfg](config/temlates/nginx.conf.j2);
+- создан playbook [install_nginx.yml](config/install_nginx.yml).
