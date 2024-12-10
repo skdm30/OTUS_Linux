@@ -36,5 +36,8 @@ update-grub
 
 ![](pic/5.png)  
 
+Также попасть в систему без пароля можно через "recovery mode"
+
+![](pic/6.png)  
 
 
