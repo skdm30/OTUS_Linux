@@ -10,4 +10,4 @@
 В группу admins добавляются пользователи "otusadm" и "root". Предоставленный в задании скрипт "[login.sh](files/login.sh)" копируется в /usr/local/bin/ и делается исполняемым.
 Далее редактируется  конфигурационный файл /etc/pam.d/sshd.
 
-[S1](config/base_setting_S1)
+
