@@ -1,0 +1,40 @@
+---
+- name: labs
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Add group admin
+      group:
+        name: admin
+        state: present
+
+    - name: Add user otus
+      user:
+        name: otus
+        password: "{{ 'P@ssword1' | password_hash('sha512') }}"
+
+    - name: Add user otusadm
+      user:
+        name: otusadm
+        password: "{{ 'P@ssword1' | password_hash('sha512') }}"
+        groups: admin
+
+    - name: Add user root in group admin
+      user:
+        name: root
+        groups: admin
+        append: yes
+
+    - name: copy script
+      copy:
+        src: /etc/ansible/login.sh
+        dest: /usr/local/bin/login.sh
+        mode: 0755
+
+    - name: add string to file /etc/pam.d/sshd
+      lineinfile:
+        path: /etc/pam.d/sshd
+        insertafter: '^@include common-auth$'
+        line: 'auth required pam_exec.so debug /usr/local/bin/login.sh'
+                                                                   
